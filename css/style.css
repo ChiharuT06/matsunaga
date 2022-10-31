@@ -1,0 +1,283 @@
+@charset "utf-8";
+/*
+CSSの必殺テンプレート奥義！！！
+
+１、デザインしたいHTMLにニックネームをつける！
+２、.(ドット）の右側の名前をニックネームに合わせて変更する。
+３、波かっこの中の:（コロン）の左右をやりたいことに合わせて変更する
+（※波かっこの中の命令は1つでも2つ以上でもOK）
+
+.container{
+	margin: auto;
+	padding-top: 80px;
+}
+
+*/
+
+.text-center {
+	text-align: center;
+}
+
+
+
+body {
+	background: linear-gradient(#fcfff9, #fff99f);
+}
+
+p.font{
+font-family:"M PLUS Rounded 1c";
+font-size: 66px;
+}
+
+
+.bg_test {
+	background-image:url(./macfuu2.jpg);
+	/* 背景画像指定 */
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+    margin: 0 auto;
+	width:  1000px;
+	height: 800px;
+}
+
+
+.bg_test p {
+	position: absolute;
+	top: 700px;
+	left: 540px;
+}
+
+.bg_test video{
+position: absolute;
+	top: 800px;
+	left: 370px;
+}
+
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+li{
+list-style-type: none;
+float:left ;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.a{width: 900px;
+    margin: auto;}	
+
+
+.center {
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 800px;
+
+}
+
+.bg_test2 {
+	background-image: url(./macfuu2.jpg);
+	/* 背景画像指定 */
+	background-repeat: no-repeat;
+	background-position: -50% -50%;
+	margin: 0 auto;
+	width: 1000px;
+	height: 800px;
+
+}
+
+.bg_test2 p {
+	position: absolute;
+	left: 50%;
+	bottom: -270%;
+	transform: translate(-50%, -50%);
+	padding: 0;
+	margin: 0;
+}
+
+.toggle {
+	width: 300px;
+	height: 300px;
+	
+}
+
+
+.title-on {
+	display: none;
+	width: 300px;
+	height: 300px;
+	background-image: url(./genkan_ok.JPG);
+	background-size: contain;
+}
+
+.title-off {
+	width: 300px;
+	height: 300px;
+	background-image: url(./genkan.JPG);
+	background-size: contain;
+
+}
+
+.toggle {
+	width: 300px;
+	height: 300px;
+}
+
+.title-on1 {
+	display: none;
+	width: 300px;
+	height: 300px;
+	background-image: url(./kitchen_ok.JPG);
+	background-size: contain;
+}
+
+.title-off1 {
+	width: 300px;
+	height: 300px;
+	background-image: url(./kitchen.JPG);
+	background-size: contain;
+
+}
+
+.title-on2 {
+	display: none;
+	width: 300px;
+	height: 300px;
+	background-image: url(./living_ok.JPG);
+	background-size: contain;
+}
+
+.title-off2 {
+	width: 300px;
+	height: 300px;
+	background-image: url(./living.JPG);
+	background-size: contain;
+
+}
+
+
+.size-test p{
+	font-family: "M PLUS Rounded 1c";
+	font-size: 60px;
+    position: absolute;
+	top: 4250px;
+	left: 530px;
+}
+
+
+.example {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 700px;
+}
+
+button {
+	width: 10em;
+	height: 5em;
+}
+
+
+#yakei {
+height : 300px;
+width :300px;
+margin: auto;
+
+}
+
+#nigata{
+height: 300px;
+width: 300px;
+margin: auto;
+
+}
+
+.bg_test3 {
+	background-image: url(./macfuu3.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin: 0 auto;
+	width: 1000px;
+	height: 800px;
+}
+
+#tasks{
+	font-size: 34px;
+}
+.box{
+	font-family: "M PLUS Rounded 1c";
+	font-size: 30px;
+}
+
+.form-control{
+	font-family: "M PLUS Rounded 1c";
+	font-size: 15px;
+}
+
+#result{
+	
+}
+
+.kitayo{
+
+   height: 600px;
+	width: 600px;
+
+}
+
+.floating-banner {
+	width: calc(100%);
+	/* 画面の1/3の幅 */
+	position: fixed;
+	/* 固定表示 */
+	bottom: 16px;
+	/* 画面下から16px */
+	right: 16px;
+	/* 画面の右から16px */
+	z-index: 9999;
+	/* 常に前面に出す */
+	transition: 0.3s;
+	/* ホバー時ゆっくり透過 */
+	cursor: pointer;
+	/* ホバー時カーソルがポインターに */
+}
+
+.floating-banner:hover {
+	opacity: 0.8;
+	/* ホバーで透過させる */
+}
+
+.floating-banner_img {
+	width: 100%;
+	/* 画像をfloating-bannerの幅に合わせる */
+}
+
+@media screen and (min-width: 481px) {
+
+	/* 画面幅481px以上 */
+	.floating-banner {
+		width: calc(100% / 3);
+		/* 画面の1/6の幅 */
+	}
+}
+
+.btn {
+	box-sizing: border-box;
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 45px;
+	width: 80%;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+   
+  <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet"
+      rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  </head>
+
+<!--ここから本編　↓↓-->
+
+  <body>
+    
+
+    <div class="text-center">
+
+
+      <!--ヘッダー画像-->
+
+
+
+  <img src="images/headder.png" alt="">
+
+<div class="bg_test">
+
+  <p class="font">～プロローグ～</p>
+  
+
+  <video controls width="800" height="600" src="video/video-top.MP4"></video>
+
+</div>
+
+<img src="images/matsunaga-3.png" alt="">
+
+<!-- 折り畳み展開ポインタ -->
+<div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
+  <a style="cursor:pointer;">
+  <img src="images/start.jpg" alt="写真"width="300" height="200">
+  </a>
+</div>
+<!--// 折り畳み展開ポインタ -->
+
+<!-- 折り畳まれ部分 -->
+
+
+<div id="open" style="display:none;clear:both;">
+<div class="bg_test2">
+
+
+
+<div class="center">
+<p class="font">まずはお掃除だ！</p>
+<ul class="clearfix a">
+
+
+<li>
+<div class="toggle">
+  <h3 class="title-on"></h3>
+  <h3 class="title-off"></h3>
+</div>
+</li>
+
+<li>
+<div class="toggle1">
+  <h4 class="title-on1"></h4>
+  <h4 class="title-off1"></h4>
+</div>
+</li>
+
+<li>
+<div class="toggle2">
+  <h5 class="title-on2"></h5>
+  <h5 class="title-off2"></h5>
+</div>
+</li>
+</ul>
+
+</div>
+
+  <!--ここの部分が折りたたまれる＆展開される部分になります。
+自由に記述してください。-->
+
+</div>
+</div>
+<!--// 折り畳まれ部分 -->
+
+
+<p class="font">今日の献立を考えるぞ！</p>
+
+
+<div class="box">
+  <div class="box-item">
+    <span class="box-title">冷蔵庫の中：</span>
+    <button id="btn1" class="form-control">豚肉</button>
+    <button id="btn2" class="form-control">鶏肉</button>
+    <button id="btn3" class="form-control">お魚</button>
+  </div>
+
+  <div class="box-item"><span class="box-title">食材：</span>
+    <p></p>
+  </div>
+</div>
+
+<div id="myresult"></div>
+<div id="comresult"></div>
+
+
+<div class="text-center result">
+  結果は・・・・
+  <div id="result2"></div>
+</div>
+
+
+<h5>↓↓↓↓　PR　↓↓↓↓</h5>
+
+<div id="yakei">
+  <a href="https://www.nightview.info/ranking/kanto/tokyo/">
+  <img src="images/oshi-yakei.jpg" alt="">
+  </a>
+</div>
+
+<div id="nigata">
+  <a href="http://www.niigata-kentei.com/html/">
+    <img src="images/niigata.jpg" alt="">
+  </a>
+</div>
+
+<h5>↑↑↑↑　PR　↑↑↑↑</h5>
+
+
+<div class="bg_test3">
+  <p class="font">会話の内容</p>
+
+    <div class="size-test">
+      <p id="result">なに話そうかな？</p>
+    </div>
+    <div class="example">
+        <button id="btn">ボタン</button>
+    </div>
+</div>
+
+<p class="font">次のスケジュールはOK？</p>
+
+<iframe
+  src="https://calendar.google.com/calendar/embed?src=opeam0kvshnfkopkg88jqn8vmc%40group.calendar.google.com&ctz=Asia%2FTokyo"
+  style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<p class="font">最後に確認だ！</p>
+    
+
+<div id="tasks"></div>
+
+<div class="kitayo">
+    <img src="images/matsunaga-2.png" alt="">
+</div>
+
+<div class="floating-banner">
+  <a href="https://www.youtube.com/watch?v=yNMi0CBJpKA">
+    <img class="floating-banner_img" src="images/firsttake.jpg" alt=”フローティングバナー”>
+  </a>
+  
+</div>
+
+
+
+<div class="btn" onclick="audio()">これで完璧だね！</div>
+
+<audio id="btn_audio">
+  <source src="audio/shine.mp3" type="audio/mp3">
+</audio>
+
+
+</div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
